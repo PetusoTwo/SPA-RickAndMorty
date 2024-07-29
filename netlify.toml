@@ -1,0 +1,6 @@
+[build]
+  publish = "dist/catalogo-h"
+  command = "npm run build"
+
+[[plugins]]
+  package = "@netlify/plugin-angular"
