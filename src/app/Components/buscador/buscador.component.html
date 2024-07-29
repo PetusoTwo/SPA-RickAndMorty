@@ -1,0 +1,43 @@
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Espacio entre las tarjetas */
+        max-width: 1300px;
+        justify-content: center;
+    }
+    .card {
+        width: 20rem;
+        border: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    .title{
+        margin: 10px;
+        justify-content: center;
+        padding: 10px;
+        color: #343a40;
+        text-align: center;
+    }
+    .btn-todo{
+        transition: transform 0.2s;
+        display: block;
+    }
+    .btn-todo:hover{
+        transform: scale(0.9) ;
+        
+    }
+    
+</style>
+<h1 class="title" style="margin: 10px; padding: 10px;">Rick And Morty</h1>
+<h3 class="card-subtitle title">Buscando a: {{termino}}</h3>
+    <div class="container" >
+        <div class="card" *ngFor = "let heroe of heroes; let i = index" >
+            <img src="{{heroe.image}}" class="card-img-top tamaño" alt={{heroe.name}}>
+            <div class="card-body">
+                <h5 class="card-title">{{heroe.name}}</h5>
+                <p class="card-text">{{heroe.description}}</p>
+                <!--<a routerLink="/personaje, i" class="btn btn-outline-success btn-todo">Ver todo...</a>--> 
+            </div>
+        </div>
+    </div>
+    
