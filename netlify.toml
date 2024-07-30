@@ -3,4 +3,4 @@
   command = "npm run build"
 
 [[plugins]]
-  package = "@netlify/plugin-angular"
+  package = "@netlify/angular-runtime"
