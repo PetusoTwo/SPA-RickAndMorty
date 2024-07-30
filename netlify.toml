@@ -1,6 +1,6 @@
 [build]
-  publish = "dist/catalogo-h"
   command = "npm run build"
+  publish = "dist/catalogo-h/browser"
 
 [[plugins]]
   package = "@netlify/angular-runtime"
