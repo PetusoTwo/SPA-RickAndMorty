@@ -33,9 +33,11 @@
         <div class="card" *ngFor = "let heroe of heroes; let i = index" >
             <img src="{{heroe.image}}" class="card-img-top tamaño" alt={{heroe.name}}>
             <div class="card-body">
-                <h5 class="card-title">{{heroe.name}}</h5>
+                <h4 class="card-title">{{heroe.name}}</h4>
                 <p class="card-text">{{heroe.description}}</p>
-                <!--<a routerLink="/personaje, i" class="btn btn-outline-success btn-todo">Ver todo...</a>--> 
+                <h5 class="card-title">Dato extra:</h5>
+                <p>{{heroe.extra}}</p>
+                <!--<a routerLink="/personaje, i" class="btn btn-outline-success btn-todo">Ver todo...</a>-->
             </div>
         </div>
     </div>
